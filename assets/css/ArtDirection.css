@@ -1,0 +1,865 @@
+    /* Reset */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+        font-size: 16px;
+        color: #333;
+        background-color: rgb(251, 251, 251);
+    }
+
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0px 50px;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .title {
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+        font-size: 35px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .logo-container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding-left: 255px;
+    }
+
+    .logo img {
+        max-width: 50px;
+        transition: ease-in-out 1s;
+    }
+
+    .logo img:hover {
+        transform: scale(1.1);
+    }
+
+        /* for burger menu */
+        #navLinks {
+            display: none;
+            /* Hide the nav links by default */
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+        }
+    
+        #navLinks li {
+            color: rgb(255, 255, 255);
+        }
+    
+        #navLinks li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    
+        #navLinks.active {
+            display: flex;
+            /* Show when active */
+        }
+    
+        .burger-menu {
+            font-size: 30px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    
+        /* Close button styles */
+        .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            z-index: 1000;
+            /* Ensure it stays on top of other items */
+        }
+    
+        .close-menu:hover {
+            color: #f00;
+            /* Change color on hover */
+        }
+    
+        /* for burger menu */
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+    }
+
+    nav li {
+        margin-left: 20px;
+        transition: ease-in-out 0.3s;
+        font-size: 30px;
+    }
+
+    nav li:hover {
+        transform: scale(1.1);
+        font-weight: 400;
+        color: #333;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Portfolio */
+    h1 {
+        position: relative;
+        font-family: "Playfair Display", serif;
+        font-size: 80px;
+        font-weight: 200;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    h1::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background-image: url('../img/sparkle.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 480px;
+        top: 90px;
+        z-index: 0;
+    }
+
+    .portfolio-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 80px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 1px solid #000000;
+        overflow: hidden;
+        width: auto;
+    }
+
+    .search-bar input {
+        border: none;
+        padding: 10px 100px 10px 20px;
+        font-size: 16px;
+        outline: none;
+        background: transparent;
+    }
+
+    .search-bar input::placeholder {
+        font-family: "Host Grotesk", sans-serif;
+        color: #d0d0d0;
+    }
+
+    .search-bar button {
+        border: none;
+        background-color: #000000;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: ease-in-out 0.3s;
+    }
+
+    .search-bar button:hover {
+        background-color: #6f6f6f;
+        /* Change backgrourgb(54, 54, 54)olor on hover */
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        padding-bottom: 64px;
+    }
+
+    /* portfolio box start */
+    .portfolio-item {
+        text-align: center;
+        position: relative;
+        display: flex;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        object-fit: cover;
+        transition: ease-in-out 0.5s;
+    }
+
+    .image-slider {
+        width: 100%;
+        /* Adjust to your needs */
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .image-slider img {
+        width: 90%;
+    }
+
+    .swiper {
+        padding: 0 !important;  
+        margin: 0 !important;   
+    }
+    /* Style for the previous button */
+    .swiper-button-prev {
+        transform: scale(0.5);
+        color: rgb(0, 0, 0) !important;
+        /* Arrow color */
+        /* Circular button */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        /* Adjust size of the arrow */
+        opacity: 0.2;
+        /* Semi-transparent */
+        transition: opacity 0.3s ease;
+        padding-right: 200px;
+    }
+
+    .swiper-button-prev:hover {
+        opacity: 1;
+
+    }
+
+    /* Style for the next button */
+    .swiper-button-next {
+        transform: scale(0.5);
+        color: rgb(0, 0, 0) !important;
+        /* Arrow color */
+        /* Circular button */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        /* Adjust size of the arrow */
+        opacity: 0.2;
+        /* Semi-transparent */
+        transition: opacity 0.3s ease;
+        padding-left: 200px;
+    }
+
+    .swiper-button-next:hover {
+        opacity: 1;
+        /* Make button fully visible on hover */
+    }
+
+    /* You can also adjust the size or position of the arrows */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-family: "Swiper", sans-serif;
+        /* Use Swiper's default font for the arrows */
+    }
+
+    /* .portfolio-item img:hover {
+        transform: scale(1.02);
+    } */
+    .TextBox {
+        position: relative;
+        z-index: 1;
+        padding-left: 30px;
+    }
+
+    .portfolio-item>.TextBox h3 {
+        padding-top: 10px;
+        text-align: left;
+        margin-top: 10px;
+        font-size: 100px;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+        color: rgb(0, 0, 0);
+        line-height: 90px;
+    }
+    .portfolio-item>.TextBox h4 {
+        padding-top: 10px;
+        text-align: left;
+        margin-top: 10px;
+        font-size: 50px;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+        color: rgb(0, 0, 0);
+        line-height: 90px;
+    }
+
+    .portfolio-item>.TextBox p {
+        text-align: left;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 100px;
+        color: rgb(177, 177, 177);
+        padding-top: 10px;
+    }
+    .portfolio-item > .TextBox > .TextboxContent{
+        font-size: 30px;
+        font-weight: 100;
+        padding: 330px 0px 0px 0px;
+        line-height: 32px;
+        width: 800px;
+        color: #5f5f5f;
+    }
+    /* portfolio box end */
+
+    /* divider start*/
+    .section-divider {
+        border: 0;
+        border-top: 1px solid rgb(205, 205, 205);
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* divider ends*/
+
+    /* About Me */
+    .about-me {
+        height: 600px;
+        display: flex;
+        padding: 150px 150px 100px 150px;
+    }
+
+    /* .aboutMeConetent:first-child {
+        flex: 1;
+        max-width: 600px;
+        width: 100%;
+        padding-right: 50px;
+    } */
+
+    .about-me>.aboutMeConetent h2 {
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
+        font-size: 80px;
+        font-weight: 200;
+        position: relative;
+        padding-bottom: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+
+    /* decoration */
+    .about-me>.aboutMeConetent h2::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-image: url('../img/coma.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 1258px;
+        top: 2px;
+        z-index: 0;
+    }
+
+    /* decoration */
+
+
+    .about-me>.aboutMeConetent p {
+        line-height: 42px;
+        margin-bottom: 20px;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        width: 1400px;
+    }
+
+    .about-me>.aboutMeConetent p span {
+        font-weight: 800;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .aboutMeConetent img {
+        width: 500px;
+        display: none;
+
+    }
+
+    .about-icons {
+        display: flex;
+        justify-content: left;
+        margin-left: 140px;
+        padding-bottom: 250px;
+
+    }
+
+    .about-icons img {
+        width: 65px;
+        margin-right: 23px;
+        transition: ease-in-out 0.5s;
+
+    }
+
+    .about-icons img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Contact */
+    .contact {
+        margin-top: 40px;
+    }
+
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact input,
+    .contact textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .contact button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        background-color: #232323;
+        padding: 50px 40px 0px 70px;
+        margin-top: 100px;
+    }
+
+    .footer-section {
+        flex-basis: 20%;
+        padding-right: 20px;
+    }
+
+    .footer-section h3 {
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .footer-section h4 {
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 30px;
+        line-height: 90px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .footer-section li {
+        transition: ease-in-out 0.3s;
+    }
+
+    .footer-section li:hover {
+        margin-bottom: 10px;
+        transform: scale(1.05);
+    }
+
+    .footer-section a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .footer-section form {
+        display: flex;
+    }
+
+    .footer-section input[type="email"] {
+        padding: 21px;
+        border: 1px solid #ccc;
+        flex-grow: 1;
+    }
+
+    .footer-section button {
+        background-color: #505050;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .footer-section:nth-child(2) {
+        margin-left: 100px;
+    }
+
+    .footer-section .contactInfo {
+        color: rgb(141, 141, 141);
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 100;
+        padding-top: 50px;
+        text-align: right;
+    }
+
+    @media (max-width: 767px) {
+        .burger-menu {
+            display: block;
+            /* Show burger menu */
+            font-size: 40px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Navigation menu */
+        #navLinks {
+            display: none;
+            /* Hide nav links by default */
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+        }
+
+        /* Navigation items */
+        #navLinks li {
+            color: rgb(255, 255, 255);
+        }
+
+        #navLinks li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        /* Active nav links */
+        #navLinks.active {
+            display: flex;
+        }
+
+        /* Close button styles */
+        .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: #fbfbfb;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .close-menu:hover {
+            color: #fbfbfb;
+            /* Hover color */
+            opacity: 0;
+        }
+
+        /* Header & layout adjustments */
+        header {
+            padding: 40px 0;
+        }
+
+        h1 {
+            padding-bottom: 0px;
+        }
+
+        h1::before {
+            display: none;
+        }
+
+        .portfolio-item>.TextBox h3 {
+            margin-top: 0;
+            font-size: 40px;
+            line-height: 40px;
+            color: #000000;
+        }
+
+        .portfolio {
+            padding-bottom: 30px
+        }
+
+        .portfolio-header h1 {
+            font-size: 80px;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            line-height: 90px;
+        }
+
+        .about-me>.aboutMeConetent h2 {
+            font-size: 60px;
+        }
+
+        .about-me {
+            padding: 0;
+            height: 515px;
+        }
+
+        .about-me>.aboutMeConetent h2::before {
+            display: none;
+        }
+
+        .about-me>.aboutMeConetent p {
+            font-size: 23px;
+            line-height: 25px;
+            width: 100%;
+        }
+
+        .about-icons {
+            justify-content: left;
+            margin-left: 0px;
+            padding-bottom: 120px;
+        }
+
+        .about-icons img {
+            width: 35px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            padding: 0 50px;
+        }
+
+        .title {
+            display: none;
+            /* Hide title */
+        }
+
+        .logo-container {
+            padding-left: 25px;
+        }
+
+        .portfolio-header {
+            flex-direction: column-reverse;
+            /* Stack vertically */
+            align-items: flex-start;
+        }
+
+        .portfolio-header h1 {
+            margin-bottom: 10px;
+            font-size: 66px;
+            line-height: 70px;
+        }
+
+        .portfolio-item img {
+            padding-top: 19px;
+        }
+        .swiper {
+            display: block; /* Ensure it's not hidden */
+            width: 100%; /* Make sure it takes up the full width */
+            height: 100%;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            display: none;
+        }
+        .image-slider img{
+            padding-top: 50px;
+        }
+        .portfolio-item{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .TextBox{
+            padding-left: 0px;
+        }
+        .portfolio-item>.TextBox h4{
+            font-size: 29px;
+            height: 35px;
+        }
+        .search-bar {
+            display: none;
+        }
+
+        .search-bar button {
+            display: none;
+        }
+
+        .search-bar input {
+            display: none;
+        }
+        .portfolio-item2>.TextBox>.TextboxContent{
+            width: 100%;
+            padding: 30px 0px 0px 0px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .portfolio-item2>.TextBox h3{
+            font-size: 50px;
+        }
+        .portfolio-item2>.TextBox p{
+            padding-top: 0px;
+            font-size: 20px;
+            line-height: 25;
+        }
+        .portfolio-item > .TextBox > .TextboxContent{
+            padding-top: 30px;
+            width:100%;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .section-divider {
+            border: 0;
+            border-top: 1px solid rgb(0, 0, 0);
+            width: 100%;
+            margin: 0px 0px 20px -3px;
+            padding-bottom: 0px!important;
+        }
+
+
+        footer {
+            flex-direction: column;
+            align-items: center;
+            height: 900px;
+            padding: 20px;
+            background-color: #333;
+
+        }
+
+        .footer-section h4 {
+            text-align: left;
+        }
+
+        .footer-section {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .contactInfo ul {
+            padding-left: 0;
+            text-align: center;
+        }
+
+        /* Contact me section at the bottom */
+        .footer-section:nth-child(3) {
+            order: 3;
+            /* Move the Contact section to the bottom */
+        }
+
+        .footer-section:nth-child(1),
+        .footer-section:nth-child(2) {
+            order: 1;
+            /* Keep Social and Jobs sections at the top */
+            margin-left: 0px;
+            text-align: left;
+        }
+
+        .footer-section .contactInfo {
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .footer-section li {
+            text-align: left;
+        }
+        .footer-section a{
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+
+    /* Desktop Styles (min-width: 769px) */
+    @media screen and (min-width: 769px) {
+        .burger-menu {
+            display: none;
+            /* Hide burger menu on desktop */
+        }
+
+        #navLinks {
+            display: flex;
+            /* Show nav links by default */
+            position: static;
+            background-color: transparent;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .close-menu {
+            display: none;
+            /* Hide close button on desktop */
+        }
+        .footer-section a{
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+
+    /* Desktop styles (1024px and up) */
+    @media (min-width: 1024px) {
+        body {
+            font-size: 18px;
+            /* Increase font size on larger screens */
+        }
+    }
