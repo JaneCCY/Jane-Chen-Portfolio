@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/webDesign.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playfair+Display:wght@400..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="title">JANE</br>CHEN</a>
+            <div class="logo-container">
+                <a href="index.html" class="logo"><img src="assets/img/logo-w.png" alt="Jane Chen Studio Logo"></a>
+            </div>
+            <nav>
+                <!-- burger menu icon -->
+                <button class="burger-menu" onclick="toggleMenu()">☰</button>
+                <!-- Close Button -->
+
+                <ul id="navLinks">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                </ul>
+
+                <!-- Close Button (X) -->
+                <span class="close-menu" onclick="closeMenu()">&#10005;</span>
+            </nav>
+        </header>
+        <hr class="section-divider">
+        <div class="portfolio-header">
+            <h1>Web Design</h1>
+            <form class="search-bar" id="searchForm">
+                <input type="text" placeholder="Search" id="searchInput" aria-label="Search Portfolio" />
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+        <section class="portfolio">
+            <div class="portfolio-item">
+                <img
+                        src="assets/img/web/wp-1.jpg" alt="Visual Design" />
+                <div class="TextBox">
+                    <h3>Furniture Website Design</h3>
+                    <p>Designing a furniture website using Visual Studio Code, focusing on creating a clean, user-friendly interface with a modern, functional design.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="portfolio">
+            <div class="portfolio-item">
+                <img src="assets/img/web/wp-2.jpg"
+                        alt="Client Brief" />
+                <div class="TextBox">
+                    <h3>Indigo Website Design</h3>
+                    <p>
+                        Redesigning the website for Indigo using Visual Studio Code, with a focus on enhancing user experience, modernizing the design, and improving functionality and navigation</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/web/wp-3.jpg"
+                        alt="Client Brief" /></a>
+                <div class="TextBox">
+                    <h3>Personal Website Design</h3>
+                    <p>
+                        Designing a personal website with a focus on showcasing our personality, emphasizing unique design elements, interactive features, and content that reflects individual style and character.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <hr class="section-divider"> -->
+        <!-- <section id="about-me" class="about-me">
+            <div class="aboutMeConetent">
+                <h2>About Me</h2>
+                <p>Hi! My name is Jane Chen. I’m a visual designer with 3+ years of experience working with brands like
+                    Hunter and Hang Ten. I
+                    specialize in digital content creation, website design, and photo editing, with expertise in
+                    planning and producing seasonal campaigns. I’m passionate about collaboration and bringing fresh
+                    ideas to life. </br>Let’s create something amazing together!
+                </p>
+                <p><span>Skills:</span></p>
+            </div>
+            <div class="aboutMeConetent">
+                <img src="assets/img/headImage.png" alt="">
+            </div>
+        </section>
+        <div class="about-icons">
+            <img src="assets/img/skill-icon/ai.png">
+            <img src="assets/img/skill-icon/ps.png">
+            <img src="assets/img/skill-icon/pr.png">
+            <img src="assets/img/skill-icon/ae.png">
+            <img src="assets/img/skill-icon/lr.png">
+            <img src="assets/img/skill-icon/au.png">
+            <img src="assets/img/skill-icon/id.png">
+            <img src="assets/img/skill-icon/vs.png">
+        </div> -->
+
+        <!-- <section class="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section> -->
+    </div>
+    <footer id="contact-me">
+
+        <div class="footer-section">
+            <h3>SOCIAL</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jane-chen-66960328b/">LinkedIn</a></li>
+                <li><a href="https://www.behance.net/JYUUUUU">Behance</a></li>
+                <li><a href="https://github.com/JaneCCY">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>JOBS</h3>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <form>
+                <input type="email" placeholder="EMAIL ADDRESS" />
+                <button type="submit">ENTER</button>
+            </form>
+            <div class="contactInfo">
+                <ul>
+                    <li>Email: jane.chen.jox9@gmail.com</li>
+                    <li>Phone: (437) 660-6457</li>
+                    <li>Address: 42 Charles St E</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="contactInfo">
+        <ul>
+            <li>Phone:(437)660-6457</li>
+            <li>Address: 42 Charles St E</li>
+        </ul>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
