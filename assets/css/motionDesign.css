@@ -2,6 +2,7 @@
     html {
         scroll-behavior: smooth;
     }
+
     * {
         margin: 0;
         padding: 0;
@@ -11,7 +12,6 @@
     /* Global Styles */
     body {
         font-size: 16px;
-        color: #333;
         background-color: rgb(24, 24, 24);
     }
 
@@ -54,61 +54,56 @@
         transform: scale(1.1);
     }
 
-        /* for burger menu */
-        #navLinks {
-            display: none;
-            /* Hide the nav links by default */
-            flex-direction: column;
-            gap: 10px;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background-color: rgb(0, 0, 0);
-            padding: 20px;
-            width: 100%;
-            height: 100%;
-            z-index: 999;
-        }
-    
-        #navLinks li {
-            color: rgb(255, 255, 255);
-        }
-    
-        #navLinks li a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-    
-        #navLinks.active {
-            display: flex;
-            /* Show when active */
-        }
-    
-        .burger-menu {
-            font-size: 30px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-    
-        /* Close button styles */
-        .close-menu {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-            z-index: 1000;
-            /* Ensure it stays on top of other items */
-        }
-    
-        .close-menu:hover {
-            color: #f00;
-            /* Change color on hover */
-        }
-    
-        /* for burger menu */
+    /* for burger menu */
+    #navLinks {
+        display: none;
+        /* Hide the nav links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    #navLinks li {
+        color: rgb(255, 255, 255);
+    }
+
+    #navLinks.active {
+        display: flex;
+        /* Show when active */
+    }
+
+    .burger-menu {
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Close button styles */
+    .close-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1000;
+        /* Ensure it stays on top of other items */
+    }
+
+    .close-menu:hover {
+        color: #f00;
+        /* Change color on hover */
+    }
+
+    /* for burger menu */
 
     nav ul {
         list-style: none;
@@ -134,6 +129,9 @@
         color: #ffffff;
     }
 
+    #navLinks li a {
+        color: white !important;
+    }
     /* Portfolio */
     h1 {
         position: relative;
@@ -227,25 +225,30 @@
         object-fit: cover;
         transition: ease-in-out 0.5s;
     }
+
     .portfolio-item video {
         width: 100%;
         height: auto;
         border-radius: 8px;
     }
+
     .divider {
         border: 0;
         border-top: 1px solid rgb(96, 96, 96);
         width: 100%;
         margin: 0px 0px 100px 0px;
     }
+
     /* .portfolio-item img:hover {
         transform: scale(1.02);
     } */
     .TextBox {
         position: relative;
-        z-index: 1; /* Ensure the text is above the image */
+        z-index: 1;
+        /* Ensure the text is above the image */
     }
-    .portfolio-item>.TextBox h3 {    
+
+    .portfolio-item>.TextBox h3 {
         text-align: left;
         margin-top: 10px;
         font-size: 30px;
@@ -474,7 +477,8 @@
     .footer-section:nth-child(2) {
         margin-left: 100px;
     }
-    .footer-section .contactInfo{
+
+    .footer-section .contactInfo {
         color: rgb(141, 141, 141);
         font-family: "Host Grotesk", sans-serif;
         font-weight: 100;
@@ -482,7 +486,7 @@
         text-align: right;
     }
 
-       /* mobile size */
+    /* mobile size */
     /* Mobile Styles (max-width: 767px) */
     @media (max-width: 767px) {
         .burger-menu {
@@ -549,9 +553,10 @@
             padding: 40px 0;
         }
 
-        h1{
+        h1 {
             padding-bottom: 0px;
         }
+
         h1::before {
             display: none;
         }
@@ -563,7 +568,7 @@
         }
 
         .portfolio {
-            padding-bottom:30px
+            padding-bottom: 30px
         }
 
         .portfolio-header h1 {
@@ -581,9 +586,11 @@
             padding: 0;
             height: 515px;
         }
-        .about-me>.aboutMeConetent h2::before{
+
+        .about-me>.aboutMeConetent h2::before {
             display: none;
         }
+
         .about-me>.aboutMeConetent p {
             font-size: 23px;
             line-height: 25px;
@@ -595,6 +602,7 @@
             margin-left: 0px;
             padding-bottom: 120px;
         }
+
         .about-icons img {
             width: 35px;
             margin-right: 5px;
@@ -627,7 +635,8 @@
         .search-bar {
             display: none;
         }
-        .search-bar button{
+
+        .search-bar button {
             display: none;
         }
 
@@ -693,7 +702,8 @@
         .footer-section li {
             text-align: left;
         }
-        .footer-section a{
+
+        .footer-section a {
             font-size: 34px;
             line-height: 40px;
         }
