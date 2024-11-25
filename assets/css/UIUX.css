@@ -54,8 +54,9 @@
     .logo img:hover {
         transform: scale(1.1);
     }
-       /* for burger menu */
-       #navLinks {
+
+    /* for burger menu */
+    #navLinks {
         display: none;
         /* Hide the nav links by default */
         flex-direction: column;
@@ -746,24 +747,33 @@
         .portfolio-item img {
             padding-top: 19px;
         }
+
         .swiper {
-            display: block; /* Ensure it's not hidden */
-            width: 100%; /* Make sure it takes up the full width */
+            display: block;
+            /* Ensure it's not hidden */
+            width: 100%;
+            /* Make sure it takes up the full width */
             height: 300px;
         }
-        .swiper-button-next:after, .swiper-button-prev:after{
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
             display: none;
         }
-        .image-slider img{
+
+        .image-slider img {
             padding-top: 50px;
         }
-        .portfolio-item2{
+
+        .portfolio-item2 {
             display: flex;
             flex-direction: column-reverse;
         }
-        .TextBox{
+
+        .TextBox {
             padding-left: 0px;
         }
+
         .search-bar {
             display: none;
         }
@@ -775,24 +785,28 @@
         .search-bar input {
             display: none;
         }
-        .portfolio-item2>.TextBox>.TextboxContent{
+
+        .portfolio-item2>.TextBox>.TextboxContent {
             width: 100%;
             padding: 30px 0px 0px 0px;
             font-size: 20px;
             line-height: 23px;
         }
-        .portfolio-item2>.TextBox h3{
+
+        .portfolio-item2>.TextBox h3 {
             font-size: 50px;
         }
-        .portfolio-item2>.TextBox p{
+
+        .portfolio-item2>.TextBox p {
             padding-top: 0px;
         }
+
         .section-divider {
             border: 0;
             border-top: 1px solid rgb(0, 0, 0);
             width: 100%;
             margin: 0px 0px 20px -3px;
-            padding-bottom: 0px!important;
+            padding-bottom: 0px !important;
         }
 
 
@@ -868,7 +882,8 @@
             display: none;
             /* Hide close button on desktop */
         }
-        .footer-section a{
+
+        .footer-section a {
             font-size: 34px;
             line-height: 40px;
         }
@@ -879,5 +894,14 @@
         body {
             font-size: 18px;
             /* Increase font size on larger screens */
+        }
+    }
+
+    @media (min-width: 1280px) and (max-width: 1440px) {
+        .portfolio-item2>.TextBox>.TextboxContent {
+            width: 500px;
+        }
+        .logo-container{
+            padding-left: 370px;
         }
     }

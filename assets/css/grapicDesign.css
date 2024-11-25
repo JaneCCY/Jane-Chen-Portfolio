@@ -722,3 +722,8 @@
             /* Increase font size on larger screens */
         }
     }
+    @media (min-width: 1280px) and (max-width: 1440px){
+        .logo-container{
+            padding-left: 370px;
+        }
+    }

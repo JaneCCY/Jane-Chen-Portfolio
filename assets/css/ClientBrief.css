@@ -737,3 +737,11 @@
             /* Increase font size on larger screens */
         }
     }
+    @media (min-width: 1280px) and (max-width: 1440px){
+        .mid-title{
+            font-size: 378px;
+        }
+        .logo-container{
+            padding-left: 370px;
+        }
+    }

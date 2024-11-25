@@ -863,3 +863,14 @@
             /* Increase font size on larger screens */
         }
     }
+    @media (min-width: 1280px) and (max-width: 1440px){
+        .portfolio-item > .TextBox > .TextboxContent{
+            padding-left: 0;
+        }
+        .TextBox{
+            padding-left: 0;
+        }
+        .logo-container{
+            padding-left: 370px;
+        }
+    }
