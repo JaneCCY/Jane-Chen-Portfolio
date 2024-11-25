@@ -725,3 +725,21 @@
             /* Increase font size on larger screens */
         }
     }
+@media (min-width: 1280px) and (max-width: 1440px){
+        .about-me>.aboutMeConetent p{
+            width: 1100px;
+            padding: 0px;
+            margin-bottom: 90px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .about-me>.aboutMeConetent h2::before{
+            left: 970px;
+        }
+        .about-me>.aboutMeConetent h2::before{
+            padding-bottom: 150px;
+        }
+        .logo-container{
+            padding-left: 370px;
+        }
+    }
