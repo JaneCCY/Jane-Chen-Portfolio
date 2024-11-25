@@ -866,6 +866,7 @@
     @media (min-width: 1280px) and (max-width: 1440px){
         .portfolio-item > .TextBox > .TextboxContent{
             padding-left: 0;
+            width: 700px;
         }
         .TextBox{
             padding-left: 0;
