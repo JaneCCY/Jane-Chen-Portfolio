@@ -43,6 +43,7 @@
         display: flex;
         justify-content: center;
         padding-left: 335px;
+        
     }
 
     .logo img {
@@ -53,9 +54,7 @@
     .logo img:hover {
         transform: scale(1.1);
     }
-    .logo-container{
-        padding-left: 300px;
-    }
+    
     /* for burger menu */
     #navLinks {
         display: none;
