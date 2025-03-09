@@ -724,6 +724,12 @@
     .about-me>.aboutMeConetent p{
         width:1200px;
 }
+    .about-icons{
+        margin-left:0px;
+    }
+    .about-me>.aboutMeConetent h2::before{
+        left:1050px;
+    }
 
 /* Larger desktop styles (1024px and up) */
 @media (min-width: 1024px) {
