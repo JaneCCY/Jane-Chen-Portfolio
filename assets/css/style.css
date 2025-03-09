@@ -282,9 +282,9 @@
 
     /* About Me */
     .about-me {
-        height: 600px;
+        height: 500px;
         display: flex;
-        padding: 150px 150px 100px 150px;
+/*         padding: 150px 150px 100px 150px; */
     }
 
     /* .aboutMeConetent:first-child {
