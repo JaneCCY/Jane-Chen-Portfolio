@@ -696,37 +696,36 @@
         }
     }
 
-    /* Desktop Styles (min-width: 769px) */
-    @media screen and (min-width: 769px) {
-        .burger-menu {
-            display: none;
-            /* Hide burger menu on desktop */
-        }
-
-        #navLinks {
-            display: flex;
-            /* Show nav links by default */
-            position: static;
-            background-color: transparent;
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        .close-menu {
-            display: none;
-            /* Hide close button on desktop */
-        }
+/* Desktop Styles (min-width: 769px) */
+@media screen and (min-width: 769px) {
+    .burger-menu {
+        display: none; /* Hide burger menu on desktop */
     }
-    @media only screen and (max-width: 1280px) {
+
+    #navLinks {
+        display: flex; /* Show nav links by default */
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .close-menu {
+        display: none; /* Hide close button on desktop */
+    }
+}
+
+/* Media query for smaller screen sizes (up to 1280px) */
+@media only screen and (max-width: 1280px) {
     .about-me {
-        padding:0;
-        height:500px;
+        padding: 0;
+        height: 500px;
     }
-        
-    /* Desktop styles (1024px and up) */
-    @media (min-width: 1024px) {
-        body {
-            font-size: 18px;
-            /* Increase font size on larger screens */
-        }
+}
+
+/* Larger desktop styles (1024px and up) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px; /* Increase font size on larger screens */
     }
+}
