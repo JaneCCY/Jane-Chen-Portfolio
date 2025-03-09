@@ -721,6 +721,8 @@
         padding: 0;
         height: 500px;
     }
+    .about-me>.aboutMeConetent p{
+        width:1200px;
 }
 
 /* Larger desktop styles (1024px and up) */
