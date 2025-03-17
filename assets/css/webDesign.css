@@ -255,6 +255,10 @@
     .portfolio-item>.TextBox p a{
         color: #b1b1b1;
     }
+    .portfolio-item>.TextBox p a:hover{
+        transform: scale(1.1);
+    }
+
 
 
     /* portfolio box end */
@@ -441,7 +445,7 @@
         font-family: "Host Grotesk", sans-serif;
         font-weight: 300;
         font-size: 40px;
-        line-height: 60px;
+        line-height: 50px;
     }
 
     .footer-section form {
