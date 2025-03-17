@@ -252,6 +252,9 @@
         color: rgb(177, 177, 177);
         padding-top: 10px;
     }
+    .portfolio-item>.TextBox p a{
+        color: #6f6f6f;
+    }
 
 
     /* portfolio box end */
