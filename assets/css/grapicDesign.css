@@ -230,14 +230,16 @@
     .portfolio-item img {
         width: 100%;
         object-fit: cover;
+        cursor: pointer;
+    }
+    .portfolio-item img:hover{
+        transform: scale(1.01);
         transition: ease-in-out 0.5s;
     }
-    /* .portfolio-item img:hover {
-        transform: scale(1.02);
-    } */
     .TextBox {
         position: relative;
         z-index: 1; /* Ensure the text is above the image */
+        text-align: left;
     }
     .portfolio-item>.TextBox h3 {
         padding-top: 10px;
@@ -258,6 +260,14 @@
         padding-top: 10px;
     }
 
+    .portfolio-item > .TextBox a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    
+    .portfolio-item > .TextBox a:hover {
+        transform: scale(1.1);
+    }
 
     /* portfolio box end */
 
