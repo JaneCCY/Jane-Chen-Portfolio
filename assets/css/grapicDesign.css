@@ -239,11 +239,11 @@
     .TextBox {
         position: relative;
         z-index: 1; /* Ensure the text is above the image */
-        text-align: left;
+        text-align: center;
     }
     .portfolio-item>.TextBox h3 {
         padding-top: 10px;
-        text-align: left;
+        text-align: center;
         margin-top: 10px;
         font-size: 30px;
         font-family: "Host Grotesk", sans-serif;
@@ -252,7 +252,7 @@
     }
 
     .portfolio-item>.TextBox p {
-        text-align: left;
+        text-align: center;
         font-family: "Host Grotesk", sans-serif;
         font-weight: 100;
         font-size: 15px;
