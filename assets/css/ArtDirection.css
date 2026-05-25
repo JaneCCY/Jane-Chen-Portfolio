@@ -146,7 +146,8 @@
         color: rgb(0, 0, 0);
     }
 
-    h1::before {
+    /* star */
+    /* h1::before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -158,7 +159,7 @@
         left: 480px;
         top: 90px;
         z-index: 0;
-    }
+    } */
 
     .portfolio-header {
         display: flex;
