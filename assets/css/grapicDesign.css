@@ -150,7 +150,8 @@
         color: rgb(255, 255, 255);
     }
 
-    h1::before {
+    /* star icon */
+    /* h1::before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -162,7 +163,7 @@
         left: 560px;
         top: 90px;
         z-index: 0;
-    }
+    } */
 
     .portfolio-header {
         display: flex;
